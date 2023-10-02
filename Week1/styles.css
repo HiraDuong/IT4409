@@ -1,0 +1,16 @@
+
+#main{
+    display: inline-block;
+    position: relative; /* Thêm dòng này để thiết lập vị trí tương đối cho #main */
+}
+
+#fb-logo{
+    width: 200px;
+}
+#heading{
+    
+    width: 800px;
+   
+}
+
+
