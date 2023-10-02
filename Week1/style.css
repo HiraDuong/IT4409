@@ -42,25 +42,57 @@ body {
 }
 
 #first-name, #surname{
-    width: 190px;
+    width: 194px;
 }
 
 #first-name{
-    margin-right:20px ;
+    margin-right:14px ;
 }
 #phone-email,#password{
     width: 428px;
 }
 
 #signup-form select {
+    display: inline-block;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 80px;
+    width: 134px;
+    margin: 0 10px;
+    
 }
 
-.gender{
-    display: block;
-    border: #e00c0c;
+#signup-form label {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 112px;
+    margin: 0 10px 0;
+    text-align: left;
+}
+
+.text-su{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#sign-up-btn {
+    display: inline-block;
+    height: 36px;
+    width: 194px;
+    background-color: rgb(6, 246, 70);
+    border-radius: 6px;
+    border: 1px solid rgb(6, 246, 70);
+    color: #fff; 
+    font-size: 14px; 
+    text-align: center;
+    line-height: 36px; 
+    cursor: pointer;
+}
+
+#sign-up-btn:hover {
+    background-color: #05ac40; 
 }

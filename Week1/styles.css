@@ -1,7 +1,8 @@
 
 #main{
     display: inline-block;
-    position: relative; /* Thêm dòng này để thiết lập vị trí tương đối cho #main */
+    position: relative; 
+    align-items: center;
 }
 
 #fb-logo{
