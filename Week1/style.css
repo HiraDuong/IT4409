@@ -80,19 +80,36 @@ body {
 }
 
 #sign-up-btn {
-    display: inline-block;
-    height: 36px;
-    width: 194px;
-    background-color: rgb(6, 246, 70);
+    background: none;
+    background-color: #00a400;
+    border: none;
     border-radius: 6px;
-    border: 1px solid rgb(6, 246, 70);
-    color: #fff; 
-    font-size: 14px; 
-    text-align: center;
-    line-height: 36px; 
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 5px 40px;
+    text-shadow: none;
     cursor: pointer;
 }
 
 #sign-up-btn:hover {
-    background-color: #05ac40; 
+    color: azure;
+}
+
+#check{
+    text-align: center;
+    color: #1877f2;
+    font-size: 17px;
+    line-height: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#gender,#text-dob{
+    text-align: left;
+    margin: 5px 0px;
+    margin-left: 28px;
 }
