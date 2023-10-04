@@ -1,0 +1,33 @@
+#part1{
+    background-color: yellow;
+    width: 1000px;
+}
+#link1,#link2 li{
+   
+    color: red;
+
+}
+
+#body1,#body2 {
+    background-color:yellow;
+    color: red;
+    padding: 20px 0px;
+}
+
+
+#body1{
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+#link2{
+
+    display: inline-block;
+    width: 200px;
+    background-color: yellow;
+    height: 222.2px;
+}
+#body2{
+    display: inline-block;
+    position: absolute;
+    width: 800px;
+}
