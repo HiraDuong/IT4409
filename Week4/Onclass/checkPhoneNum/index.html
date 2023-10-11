@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="vn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div id="main-page">
+            <form  onsubmit="return check()">
+                <div class="form-group">
+                  <label for="Email">Email address</label>
+                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="Phone">Phone</label>
+                  <input type="tel" class="form-control" id="Phone" placeholder="Phone">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>
