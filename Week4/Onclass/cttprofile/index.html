@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="main.js" defer></script>
         <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     </head>
     <body> 
         <div id="main-page">
@@ -29,7 +31,152 @@
             </div>
 
             <div id="part2">
+                <div class="nav" id="nav2">
+                    <div id="qd" class="nav-btn" onclick="display_content_two('ll-text')">Lý lịch</div>
+                    <div id="qd" class="nav-btn" onclick="display_content_two('qd-text')">Quyết định</div>
+                    <div id="kt" class="nav-btn" onclick="display_content_two('kt-text')">Khen thưởng</div>
+                    <div id="lh" class="nav-btn" onclick="display_content_two('lh-text')">Liên hệ</div>
+                    <div id="nx" class="nav-btn" onclick="display_content_two('nx-text')">Nhận xét</div>
+                    <div id="hdtg" class="nav-btn" onclick="display_content_two('hdtg-text')">Hoạt động tham gia</div>
+                                        
+                </div>
+                <!-- Li lich -->
+                <div id="ll-text" style="display: block;">
+                    <div id="personal-info " class="part2-text">
+                        <h2>Thông tin cá nhân</h2>
+                        <div class="part2-col col1" >
+                            <p>Ngày sinh: 13/05/2002</p>
+                            <p>Số CMTND:012345678910</p>
+                            <p>Dân tộc: KINH</p>
+                            <p>Ngày vào Đoàn:</p>
+                           
+                        </div>
+                        <div class="part2-col col2" >
+                            <p>Nơi sinh: sao Mộc</p>
+                            <p>Nơi cấp: Trái Đất</p>
+                            <p>Tôn giáo: KHÔNG</p>
+                            <p>Ngày vào Đảng:</p>
+                        </div>
+                        <div class="part2-col col3" >
+                            <p>Giới tính: Nam</p>
+                            <p>Ngày cấp:</p>
+                            <p>Chi đoàn:</p>
+                            <p>Đoàn viên</p>
+                        </div>
+                        <div class="sub-text">
+                            <p>Đối tượng chính sách: </p>
+                            <p>Số thẻ bảo hiểm: 0123456789</p>
+                            <p>Địa chỉ thường trú: PHƯỜNG BÁCH KHOA, QUẬN HAI BÀ TRƯNG, HÀ NỘI</p>
+                            <p>Nơi ở hiện tại: sao Hỏa</p>
+                        </div>
+                    </div>
+                    <div id="family-info" class="part2-text">
+                        <h2>Thông tin gia đình</h2>
+                        <!--  -->
+                        <h4>Họ và tên cha</h4>
+                        <div class="part2-col col1" >
+                            <p>Dân tộc: KINH</p>
+                            <p>Nơi làm việc:</p>
+                            <p>Địa chỉ thường trú:</p>
+                            <p>Liên hệ:</p>
+                           
+                        </div>
+                        <div class="part2-col col2" >
+                            <p>Năm sinh:</p>
+                            <p>Tôn giáo: KHÔNG</p>
+                        </div>
+                        <div class="part2-col col3" >
+                            <p>Quốc tịch: Việt Nam</p>
+                            <p>Nghề nghiệp: NÔNG DÂN</p>
 
+                        </div>
+
+                        <!-- Mom -->
+                        <h4>Họ và tên mẹ</h4>
+                        <div class="part2-col col1" >
+                            <p>Dân tộc: KINH</p>
+                            <p>Nơi làm việc:</p>
+                            <p>Địa chỉ thường trú:</p>
+                            <p>Liên hệ:</p>
+                           
+                        </div>
+                        <div class="part2-col col2" >
+                            <p>Năm sinh:</p>
+                            <p>Tôn giáo: KHÔNG</p>
+                        </div>
+                        <div class="part2-col col3" >
+                            <p>Quốc tịch: Việt Nam</p>
+                            <p>Nghề nghiệp: NÔNG DÂN</p>
+
+                        </div>
+                        <div class="sub-text">
+                            <h4>Thông tin người thân khác:</h4>
+                            <h4 style="display: inline-block ;    margin-right: 200px;" >Thuộc hộ:</h4>
+                            <h4 style="display: inline-block">Số sổ:</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quyet dinh -->
+                <div id="qd-text" style="display: none;">
+                    <div>
+                        <p>Quyết định số: nhập học 2020</p>
+                        <p>Thời gian thực hiện: 10.10.2020</p>
+                        <p>Trạng thái: Đã thực hiện lớp,CTĐT</p>
+                    </div>
+                    <div>
+                        <p>Quyết định số:  Chuyển từ KCNTT sang TCNTT</p>
+                        <p>Thời gian thực hiện: 20.04.2022</p>
+                        <p>Trạng thái: Đã thực hiện lớp,CTĐT</p>
+                    </div>
+                </div>
+                <!-- Khen thuong -->
+                <div id="kt-text" style="display:none">
+                    <p>Bạn quá xuất sắc nên không cần phải khen thưởng</p>
+        
+                </div>
+                <!-- Lien he -->
+                <div id="lh-text" style="display:none">
+                    <button id="add-addr-btn">Thêm địa chỉ</button>
+                    <div>
+                        <div class="addr-col ">
+                            <p>Địa chỉ:</p>
+                            <p>Số điện thoại:</p>
+                            <p>Nhà riêng</p>
+                            <button class="del-btn">Xóa</button>
+
+                        </div>
+                        <div class="addr-col ">
+                            <p>Địa chỉ</p>
+                            <p>Số điện thoại:</p>
+                            <p>Nhà riêng</p>
+                            <button class="del-btn">Xóa</button>
+                        </div>
+                        <div class="addr-col ">
+                            <p>Địa chỉ</p>
+                            <p>Số điện thoại:</p>
+                            <p>Nhà riêng</p>
+                            <button class="del-btn">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nhan xet -->
+                <div id="nx-text" style="display: none;">
+                    <p>Nhận xét của giáo viên, cán bộ dành cho sinh viên</p>
+                </div>
+                <!-- Hoat dong -->
+                <div id="hdtg-text" style="display:none;" >
+                    <div id="hdtg-nav">
+                        <div class="search-box">
+                            <input type="text" placeholder="Nhập từ khóa">
+                        </div>
+                        <button class="search-btn" onclick="toggleSearch()"><i class="fa fa-search"></i></button>
+                        <p>Hoạt động bạn tham gia</p>
+                    </div>
+                    
+                    <div id="hd-text">
+                        Không có hoạt động
+                    </div>
+                </div>
             </div>
             <div id="part3">
                 <div class="nav" id="nav3">
