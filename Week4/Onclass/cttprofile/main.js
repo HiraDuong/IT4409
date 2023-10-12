@@ -47,3 +47,79 @@ function toggleSearch() {
     isSearchBoxOpen = true;
   }
 }
+
+// chart
+const xValues = ["20201", "20202", "20211", "20212", "20221", "20222"];
+const tcValues = [10, 23, 46, 70, 92, 112];
+const diemValues = [4, 4, 4, 4, 4, 4];
+
+new Chart("htChart", {
+  type: "bar",
+  data: {
+    datasets: [
+     
+      {
+        type: 'line',
+        yAxisID: 'B',
+        fill: false,
+        lineTension: 0,
+        data: diemValues,
+        backgroundColor: "rgba(0,0,255,1.0)",
+        borderColor: "rgba(0,0,255,0.1)",
+        borderWidth: 2, 
+        pointRadius: 5, 
+        pointHoverRadius: 7, 
+        label:'CPA',
+      },{
+        type: 'line',
+        yAxisID: 'B',
+        fill: false,
+        lineTension: 0,
+        data: diemValues,
+        backgroundColor: "rgba(0,0,255,1.0)",
+        borderColor: "rgba(0,0,255,0.1)",
+        borderWidth: 2, 
+        pointRadius: 5, 
+        pointHoverRadius: 7, 
+        label:'GPA',
+      },
+      {
+        type: 'bar',
+        yAxisID: 'A',
+        data: tcValues,
+        backgroundColor: "green",
+        label:"TC tích lũy",
+      },
+    ],
+    labels: xValues
+  },
+  options: {
+    scales: {
+      yAxes: [
+        {
+          id: 'A',
+          type: 'linear',
+          position: 'left',
+          ticks: {
+            max: 200,
+            min: 0,
+            stepSize:50,
+          }
+        },
+        {
+          id: 'B',
+          type: 'linear',
+          position: 'right',
+          ticks: {
+            max: 4,
+            min: 0
+          }
+        }
+      ]
+    },
+    title: {
+      display: false // Ẩn title của biểu đồ
+    }
+
+  }
+});

@@ -2,7 +2,8 @@
     display: inline-block;
     position: relative;
     background-color: #f4d5d5;
-    height: 1000px;
+    
+    width: 100%;
 }
 #nav{
     height: 50px;
@@ -275,11 +276,34 @@
 
 .part3-text{
     margin: 30px;
-    width: 400px;
     height: 300px;
     border: #3498db;
+    width: 80%;
 }
 
+/* PART 4 HERE */
+#part4{
+    position: absolute;
+    display: inline-block;
+    width: 1160px;
+    top:920px;
+    background-color: rgb(211, 206, 206);
+}
+.part4-col{
+    display: inline-block;
+    height: 300px;
+    width: 40%;
+    margin: 20px;
+    vertical-align: top;
+}
+
+#ht-col{
+
+}
+
+#rl-col{
+
+}
 
 /* FOOTER HERE */
 
@@ -293,10 +317,11 @@ p{
     margin-block-end: 0.5em;
 }
 footer{
-    display: inline-block;
+    position: absolute;
     width: 100%;
     height: 200px;
     background-color: red;
+    top:1300px;
 }
 button{
     border: none;
