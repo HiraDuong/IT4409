@@ -49,10 +49,13 @@ function toggleSearch() {
 }
 
 // chart
-const xValues = ["20201", "20202", "20211", "20212", "20221", "20222"];
+  //htChart
+const xValues = ["2020-1", "2020-2", "2021-1", "2021-2", "2022-1", "2022-2"];
 const tcValues = [10, 23, 46, 70, 92, 112];
-const diemValues = [4, 4, 4, 4, 4, 4];
-
+const tcNo = [0,3,0,0,0,0]
+const GPAValues = [3.9, 4.0, 3.6, 3.9, 4.0, 3.9];
+const CPAValues = [3.9, 3.9, 3.8, 3.9, 3.9, 3.9];
+const rlValues = [88,90,98,90,100,92];
 new Chart("htChart", {
   type: "bar",
   data: {
@@ -63,24 +66,20 @@ new Chart("htChart", {
         yAxisID: 'B',
         fill: false,
         lineTension: 0,
-        data: diemValues,
-        backgroundColor: "rgba(0,0,255,1.0)",
+        data: CPAValues,
+        backgroundColor:"rgba(120,120,120,1.0)",
         borderColor: "rgba(0,0,255,0.1)",
-        borderWidth: 2, 
-        pointRadius: 5, 
-        pointHoverRadius: 7, 
         label:'CPA',
+        pointStyle: 'circle',
+        
       },{
         type: 'line',
         yAxisID: 'B',
         fill: false,
         lineTension: 0,
-        data: diemValues,
-        backgroundColor: "rgba(0,0,255,1.0)",
+        data: GPAValues,
+        backgroundColor:"rgba(0,0,255,1.0)",
         borderColor: "rgba(0,0,255,0.1)",
-        borderWidth: 2, 
-        pointRadius: 5, 
-        pointHoverRadius: 7, 
         label:'GPA',
       },
       {
@@ -89,7 +88,18 @@ new Chart("htChart", {
         data: tcValues,
         backgroundColor: "green",
         label:"TC tích lũy",
+        pointStyle: 'circle',
+        stack:"stack0",
       },
+      {
+        type:'bar',
+        yAxisID:'A',
+        data: tcNo,
+        backgroundColor:"red",
+        label:'TC nợ',
+        stack:"stack0",
+
+      }
     ],
     labels: xValues
   },
@@ -104,7 +114,8 @@ new Chart("htChart", {
             max: 200,
             min: 0,
             stepSize:50,
-          }
+          },
+          stacked: true, 
         },
         {
           id: 'B',
@@ -118,8 +129,73 @@ new Chart("htChart", {
       ]
     },
     title: {
-      display: false // Ẩn title của biểu đồ
-    }
-
+      display: false 
+    },
+    legend: {
+      display: true,
+      position: 'bottom', 
+    },
+    tooltips: {
+      mode: 'index',
+      intersect: false,
+    },
+    hover: {
+      mode: 'index',
+      intersect: false,
+      
+    },
+    responsive  : true,
+    
   }
 });
+  //rlChart
+  new Chart("rlChart", {
+    type: "bar",
+    data: {
+      datasets: [
+        {
+          type: 'line',
+  
+          fill: false,
+          lineTension: 0,
+          data: rlValues,
+          backgroundColor:"rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          label:'Điểm rèn luyện',
+
+        }
+      ],
+      labels: xValues
+    },
+    options: {
+      scales: {
+        yAxes: [
+         {
+           ticks:{
+            max :100,
+            min:0,
+            stepSize: 20,
+          },
+        }
+        ]
+      },
+      title: {
+        display: false 
+      },
+      legend: {
+        display: true,
+        position: 'bottom',      
+
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'index',
+        intersect: false,
+        
+      },
+      responsive: true,
+    }
+  });
