@@ -1,8 +1,98 @@
-#main-page{
-    display: inline-block;
-    position: relative;
+body{
+    width: 100%;
     background-color: #f4d5d5;
+    font-family: sans-serif;
+    margin:0;
+}
+#header{
+    background-color: #c03125;
+    margin-bottom: 10px;
+}
+#wrap-header{
+
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+#main-nav{
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden; 
+    display: flex;
+}
+.main-nav{
+    display: inline-block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+    cursor: pointer;
+    font-weight: bold ;
     
+}
+
+.items{
+    display: inline-block !important;
+    margin-right: 10px;
+    width: 15px  !important;
+}
+#qd-text p{
+    display: flex;
+    align-items: center;
+}
+#user-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 160px;
+    left: 1000px;
+    color: white;
+    cursor: pointer;
+}
+
+#signout-btn{
+    position: absolute;
+    left: 55px;
+    bottom: 15px;
+    width:100px ;
+    cursor: pointer;
+    background-color:white ;
+    padding: 10px;
+    border-radius: 5px;
+}
+#signout-btn a{
+    text-decoration: none;
+    color: rgb(195, 165, 165);
+} 
+
+#user-btn .user-name{
+    font-weight: bold;
+}
+
+#user-btn img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+#router{
+    font-weight: bold;
+    color:#c03125;
+    margin-left: 20px;
+}
+#hust-logo{
+    height: 50px;
+    margin-left: 16px;
+    padding:10px 0px;
+}
+
+#main-page{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
     width: 100%;
 }
 #nav{
@@ -21,21 +111,30 @@
     border-top-right-radius: 10px;
 }
 
-.nav > div{
+.nav > li{
     display: inline-block;
     height: 40px;
     line-height: 40px; 
     text-align: center;
-    width: 110px;
+    padding: 2px 12px;
     margin: -2px;
-   
+   cursor: pointer;
    
 }
-.nav > div:hover {
-    color: red;
+.nav > li:hover {
+    color:#c02135;
     cursor: pointer;
   }
   
+ul{
+    padding: 0;
+}
+#study-status{
+    color:#009688;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
 /* PART 1 HERE */
 #part1{
     position: absolute;
@@ -52,7 +151,7 @@
 #part1-text{
     position: absolute;
     top: 370px;
-    left:30px;
+    left:15px;
 }
 #hust-img{
     display: inline-block;
@@ -78,7 +177,7 @@
 /* PART 2 HERE */
 #part2{
     position: absolute;
-    width: 740px;
+    width: 760px;
 
     height: 880px;
     background-color: #ffffff;
@@ -95,6 +194,7 @@
 }
 #hdtg{ 
     width: 150px !important;
+    padding-right: 15px;
 }
 .part2-text{
     margin: 15px 0 0 30px;
@@ -178,6 +278,7 @@
 }
 .addr-col >p{
     margin-left:10px ;
+    margin-top: 15px;
 }
 .addr-col button{
     display: none;
@@ -188,6 +289,7 @@
     border-radius: 3px;
     margin-left: 280px;
     position: absolute;
+    top :75px;
 }
 .addr-col button:hover{
     background-color: #ebb563;
@@ -275,7 +377,7 @@
 }
 
 .part3-text{
-    margin: 30px;
+    margin-left: 30px;
     height: 300px;
     border: #3498db;
     width: 80%;
@@ -285,7 +387,7 @@
 #part4{
     position: absolute;
     display: inline-block;
-    width: 1100px;
+    width: 1115px;
     top:920px;
     padding-left: 60px;
     background-color: rgb(255, 255, 255);
@@ -348,14 +450,7 @@ footer div{
     width: 120px;
 }
 
-body{
-   
-    background-color: #f4d5d5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
+
 p{
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
@@ -367,7 +462,7 @@ footer{
     width: 100%;
     height: 400px;
     background-image: url('https://ctsv.hust.edu.vn/static/img/footer.1e5dd709.jpeg');
-    top:1380px;
+    top:1490px;
     background-repeat:no-repeat ;
     background-size: cover; 
     background-position: center;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap Navigation Example</title>
+</head>
+<body>
+
+<div class="container mt-4">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" id="qd" href="#" onclick="display_content_two('ll-text')">Lý lịch</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="qd" href="#" onclick="display_content_two('qd-text')">Quyết định</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="kt" href="#" onclick="display_content_two('kt-text')">Khen thưởng</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="lh" href="#" onclick="display_content_two('lh-text')">Liên hệ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="nx" href="#" onclick="display_content_two('nx-text')">Nhận xét</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="hdtg" href="#" onclick="display_content_two('hdtg-text')">Hoạt động tham gia</a>
+    </li>
+  </ul>
+
+  <!-- Thêm nội dung ở đây -->
+  <div id="ll-text" class="content">Nội dung Lý lịch</div>
+  <div id="qd-text" class="content">Nội dung Quyết định</div>
+  <div id="kt-text" class="content">Nội dung Khen thưởng</div>
+  <div id="lh-text" class="content">Nội dung Liên hệ</div>
+  <div id="nx-text" class="content">Nội dung Nhận xét</div>
+  <div id="hdtg-text" class="content">Nội dung Hoạt động tham gia</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function display_content_two(id) {
+    // Đặt logic hiển thị nội dung dựa trên id tương ứng
+    console.log("Displaying content for:", id);
+  }
+</script>
+
+</body>
+</html>

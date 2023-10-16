@@ -48,6 +48,21 @@ function toggleSearch() {
   }
 }
 
+function showSignOut(){
+  var signout_btn = document.getElementById('signout-btn')
+  if (signout_btn.style.display ==='none'){
+    signout_btn.style.display = 'block'
+  }
+
+}
+
+function hideSignOut(){
+  var signout_btn = document.getElementById('signout-btn')
+  if (signout_btn.style.display ==='block'){
+    signout_btn.style.display = 'none'
+  }
+}
+
 // chart
   //htChart
 const xValues = ["2020-1", "2020-2", "2021-1", "2021-2", "2022-1", "2022-2"];
@@ -86,6 +101,7 @@ new Chart("htChart", {
         type: 'bar',
         yAxisID: 'A',
         data: tcValues,
+       
         backgroundColor: "green",
         label:"TC tích lũy",
         pointStyle: 'circle',
@@ -105,6 +121,12 @@ new Chart("htChart", {
   },
   options: {
     scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false 
+          }
+        }],
       yAxes: [
         {
           id: 'A',
@@ -124,9 +146,12 @@ new Chart("htChart", {
           ticks: {
             max: 4,
             min: 0
+          },gridLines: {
+            display: false 
           }
         }
       ]
+      
     },
     title: {
       display: false 
@@ -168,7 +193,14 @@ new Chart("htChart", {
       labels: xValues
     },
     options: {
+      
       scales: {
+        xAxes: [
+          {
+            gridLines: {
+              display: false // Ẩn lưới cho trục x
+            }
+          }],
         yAxes: [
          {
            ticks:{
