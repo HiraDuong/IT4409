@@ -49,15 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name2 = $_POST['name2'];
     $dob2 = new DateTime($_POST['dob2']);
 
-    // Tính tuổi
+
     $today = new DateTime();
     $age1 = $today->diff($dob1)->y;
     $age2 = $today->diff($dob2)->y;
 
-    // Tính số ngày chênh lệch
+   
     $diffDays = $dob1->diff($dob2)->days;
 
-    // Hiển thị kết quả
     echo "<h2>Kết quả:</h2>";
     echo "<p>$name1 có tuổi là $age1 tuổi.</p>";
     echo "<p>$name2 có tuổi là $age2 tuổi.</p>";
