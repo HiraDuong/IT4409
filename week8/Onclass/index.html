@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+3 <head>
+<title>Socket.IO chat</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<h1 id="yourname"></h1> <!-- display name -->
+<ul id="messages"></ul> <!-- display list messages -->
+
+<form id="form" action="">
+<input id="input" autocomplete="off" /><button>Send</button>
+</form>
+<!-- load socket.io script from node_modules -->
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+    const socket = io()
+    const messages = document.getElementById("messages")
+    const form = document.getElementById("form")
+</script>
+</body>
+ </html>
+
+>
